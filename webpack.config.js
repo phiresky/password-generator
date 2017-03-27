@@ -37,7 +37,7 @@ module.exports = {
             },
             {
                 // typescript
-                test: /\.tsx?$/, use: 'awesome-typescript-loader',
+                test: /\.tsx?$/, use: {loader: 'awesome-typescript-loader', options: {transpileOnly: true}},
                 exclude: /node_modules/
             },
             {
